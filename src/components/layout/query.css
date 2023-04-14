@@ -1,0 +1,13 @@
+@media (max-width: 500px) {
+  #side_bar {
+    display: none;
+  }
+
+  #side_bar.show_sidebar {
+    display: flex;
+  }
+
+  .email_box {
+    margin-left: 1rem;
+  }
+}
