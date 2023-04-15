@@ -38,6 +38,16 @@ import Tag from '../img/tag.png';
 import Task from '../img/tasks_2021_2x.png';
 
 const Body = () => {
+  const onClick = () => {
+    const menu = () => {
+      document.querySelector('#menu');
+    };
+
+    const sidebar = document.querySelector('#side_bar');
+
+    menu(sidebar.classList.toggle('show_sidebar'));
+  };
+
   return (
     <div>
       <header>
@@ -51,6 +61,7 @@ const Body = () => {
                     border: 'none',
                     cursor: 'pointer',
                   }}
+                  onClick={onClick}
                 >
                   <img id='menu' src={Menu} alt='' className='menu' />
                 </button>
